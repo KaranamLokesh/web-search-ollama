@@ -10,7 +10,7 @@ import { Settings, Save } from "lucide-react"
 
 export function SettingsPanel() {
   const [ollamaUrl, setOllamaUrl] = useState("http://localhost:11434")
-  const [ollamaModel, setOllamaModel] = useState("llama3.2")
+  const [ollamaModel, setOllamaModel] = useState("scb10x/typhoon2.1-gemma3-4b")
   const [isExpanded, setIsExpanded] = useState(false)
 
   const handleSave = () => {
@@ -64,7 +64,7 @@ export function SettingsPanel() {
                 type="text"
                 value={ollamaModel}
                 onChange={(e) => setOllamaModel(e.target.value)}
-                placeholder="llama3.2"
+                placeholder="scb10x/typhoon2.1-gemma3-4b"
                 className="text-sm"
               />
               <p className="text-xs text-muted-foreground">The model name to use for AI summarization</p>

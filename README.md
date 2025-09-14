@@ -54,7 +54,7 @@ OLLAMA_MODEL="gemma:2b"
 
 1.  **Start Ollama:** Ensure your Ollama server is running in the background.
     ```bash
-    ollama run <your-model-name> # e.g., ollama run gemma:2b
+    ollama run <your-model-name> # 
     ```
 2.  **Run in Development Mode:**
     ```bash
